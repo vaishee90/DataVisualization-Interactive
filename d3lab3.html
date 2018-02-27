@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>d3lab3</title>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+	<div id="viz"></div>
+	<form NAME="myForm">
+	<input TYPE="button" id="clickButton1" VALUE="Click Me :)"
+	onClick="buttonClick();"> </form>
+	<script type="text/javascript">
+		var svgCircle = d3.select("#viz").append("svg").attr("width", 600) .attr("height", 400);
+		var circle = svgCircle.append("circle").style("stroke", "black").style("fill", "white").attr("r", 40).attr("cx", 50).attr("cy", 50);
+		function buttonClick() { circle.transition().attr("cx", Math.abs(Math.random()*150 + 100)); }
+		var x_val = 50;
+		var y_val = 0;
+		var xcolor = d3.rgb(Math.random() * 255, Math.random() * 255, Math.random() * 255);
+		var ycolor = d3.rgb(Math.random() * 255, Math.random() * 255, Math.random() * 255);
+		function buttonClick() { d3.select("circle").transition().attr("transform","translate(" + x_val + "," + y_val +")").delay(100).duration(1000).style("fill",xcolor).transition().attr("transform", "translate("+ x_val +"," + (y_val + 50) + ")").style("fill",ycolor); x_val = (x_val + 50) % 300; y_val = (y_val + 50) % 300; xcolor = d3.rgb(Math.random() * 255, Math.random() * 255, Math.random() * 255); ycolor = d3.rgb(Math.random() * 255, Math.random() * 255, Math.random() * 255);}
+		
+	</script>
+</body>
+</html>

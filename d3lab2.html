@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>d3lab2</title>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+<body>
+	<h2>CSE 578 Data Visualization</h2>
+	<h1 id="myh1"></h1>
+ 	<div id="viz"></div>
+ 	<script type="text/javascript">
+ 		// change background color
+ 		d3.select("body").style("background-color","#D8D8D8");
+ 		// change heading 2 color
+ 		d3.select('h2').style("color","blue");
+ 		// get new color randomly
+ 		var newcolor = d3.rgb(Math.random() * 225,Math.random() * 225,Math.random() * 225);
+ 		// update heading 2 with random color
+ 		d3.select('h2').style("color",newcolor);
+ 		// change heading 2 text
+ 		d3.select('h2').text("What?");
+ 	</script>
+</body>
+</html>
