@@ -1,0 +1,46 @@
+body {
+      font-family:"avenir next", Arial, sans-serif;
+      font-size: 15px;
+    }
+    h1 {
+      color: #FFA500;
+    }
+
+   text {  
+    font: 10px sans-serif; 
+  }
+  p {
+    color: white;
+  }
+
+    #chart {
+      margin: 0px auto;
+      width: 100%; 
+      fill: white;
+    }
+
+    #bgimg{
+      background-image: url(tennis_bg.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-blend-mode: normal;
+      position: relative;
+    }
+
+    .circle {
+      stroke: black;
+      stroke-width: 1;
+    }
+
+    .axis path, .axis line {
+      fill: none;
+      stroke: white;
+      shape-rendering: crispEdges;
+    }
+
+    .name.label {
+      font: 700 40px "Open Sans"; 
+      fill: #E0C48E;
+      z-index: 1000;
+    }

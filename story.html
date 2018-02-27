@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Interactive Viz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="returnvswin.css">
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #C6C6C6; background-blend-mode: overlay; opacity: 0.7">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="font-size: 20px; font-weight: 700; color: black">TennisPlanet</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html" style="color: black; font-weight: 600">Viz</a></li>
+      <li class="active"><a href="#" style="font-weight: 600">Story</a></li>
+    </ul>
+</nav>
+<div id="bgimg">
+<div id = "filler" style="min-height: 50px"></div>
+<div class="container" style="min-height: 2000px;">
+  <h1 id = "story_title">Return to Win?</h1>
+  <div id = "filler" style="min-height: 50px"></div>
+  <p>
+    “The tennis return of serve is one of the best weapons many tennis players have.” [1] Returning a serve gives the player a good opportunity to score points by scoring an ace or breaking a server or in any other way possible. This made me draw an assumption that if a player is good at return serves, then he/she must have a high chance of winning more number of matches, which eventually should pave the path to championship in a game. If the percentage of return serves are plotted against the percentage of matches won, it should show a positive linear relationship – higher the percentage of return serves, higher the percentage of matches won.
+  </p>
+  <p>
+    I decided to use the data of the quarter-final, semi-final and final matches as I wanted to see if my assumption was right in these crucial rounds of the game. I concluded to use a scatterplot so as to clearly depict the afore-mentioned relationship among players by having each point to represent a player. The relationship is analysed for across ten years so as to understand if it is a valid trend. The points have been plotted with the same size except for the champion in each year for differentiation and additionally for explicit depiction of the trend with champions of the game. Points for the champion and the rest of the players have been coded in different colors to show the distinction from each other. Years have been listed as buttons for easy navigation and the points plotted perform a transition each time a new year is selected to visually present the changes. A mouse over interaction has also been added to the points; points enlarge slightly upon selection and the corresponding player’s name is displayed on the chart.
+  </p>
+  <p>
+    After plotting as per the design, the assumption did seem to be true predominantly over the ten years. Players who had a higher percentage of return serves had won a higher percentage of matches. The points are higher on the chart when the percentage of return serves is higher, showing that a higher percentage of return serves leads to a higher percentage of matches won. One anomaly in the trend was in the year 2009, where the champion has a lower percentage of return serves and of course had the highest percentage of matches won. One reason for this might be that the player scored more points in other things like aces or perhaps the opponent played aggressively and lost points in making too many errors while playing that paved way for the champion to win the game. All in all, since the assumption turned out to be right for more than 90% of the data, we can conclude to some extent that this is a valid trend. 
+  </p>
+  <p>
+    [1]: http://www.optimumtennis.net/return-of-serve.htm
+  </p>
+</div>
+</div>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="returnvswin.js"></script>
+</body>
+</html>

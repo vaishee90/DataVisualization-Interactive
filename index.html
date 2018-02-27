@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Interactive Viz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="returnvswin.css">
+
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #C6C6C6; background-blend-mode: overlay; opacity: 0.7">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="font-size: 20px; font-weight: 700; color: black">TennisPlanet</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#" style="font-weight: 600">Viz</a></li>
+      <li><a href="story.html" style="color: black; font-weight: 600">Story</a></li>
+    </ul>
+</nav>
+<div id="bgimg">
+<div id = "filler" style="min-height: 50px"></div>
+<div class="container" style="min-height:700px;">
+  <h1 id = "story_title">Return to Win?</h1>
+
+  <div class="container">
+    <p id="chart" style="max-width: 645px; background-blend-mode: overlay;"></p>
+  </div>
+  <div id = "filler" style="min-height: 50px"></div>
+  <div class="container" style="max-width: 800px; margin-left: 250px">
+    <div id="nav_years">
+      <a class="btn btn-warning" href="#" role="button" id="btn_04" onclick="yearSelect(2004)">2004</a>
+      <a class="btn btn-warning" href="#" role="button" id="btn_05" onclick="yearSelect(2005)">2005</a>
+      <a class="btn btn-warning" href="#" role="button" id="btn_06" onclick="yearSelect(2006)">2006</a>
+      <a class="btn btn-warning" href="#" role="button" id="btn_07" onclick="yearSelect(2007)">2007</a>
+      <a class="btn btn-warning" href="#" role="button" id="btn_08" onclick="yearSelect(2008)">2008</a>
+      <a class="btn btn-warning" href="#" role="button" id="btn_09" onclick="yearSelect(2009)">2009</a>
+      <a class="btn btn-warning" href="#" role="button" id="btn_10" onclick="yearSelect(2010)">2010</a>
+      <a class="btn btn-warning" href="#" role="button" id="btn_11" onclick="yearSelect(2011)">2011</a>
+      <a class="btn btn-warning" href="#" role="button" id="btn_12" onclick="yearSelect(2012)">2012</a>
+      <a class="btn btn-warning" href="#" role="button" id="btn_13" onclick="yearSelect(2013)">2013</a>
+      <a class="btn btn-warning" href="#" role="button" id="btn_14" onclick="yearSelect(2014)">2014</a>
+    </div>
+  </div>
+</div>
+</div>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="returnvswin.js"></script>
+</body>
+</html>
