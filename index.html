@@ -13,23 +13,30 @@
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #C6C6C6; background-blend-mode: overlay; opacity: 0.7">
     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="background-color: black">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
       <a class="navbar-brand" href="#" style="font-size: 20px; font-weight: 700; color: black">TennisPlanet</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
     <ul class="nav navbar-nav">
       <li class="active"><a href="#" style="font-weight: 600">Viz</a></li>
       <li><a href="story.html" style="color: black; font-weight: 600">Story</a></li>
     </ul>
+    </div>
 </nav>
 <div id="bgimg">
 <div id = "filler" style="min-height: 50px"></div>
 <div class="container" style="min-height:2000px;">
   <h1 id = "story_title">Return to Win?</h1>
 
-  <div class="container">
-    <p id="chart" style="max-width: 645px; background-blend-mode: overlay;"></p>
+  <div class="container" id="chart_container">
+    <p id="chart" style="background-blend-mode: overlay;"></p>
   </div>
   <div id = "filler" style="min-height: 50px"></div>
-  <div class="container" style="max-width: 800px; margin-left: 250px">
+  <div class="container" id="btn_container" style="max-width: 800px;">
     <div id="nav_years">
       <a class="btn btn-warning" href="#" role="button" id="btn_04" onclick="yearSelect(2004)">2004</a>
       <a class="btn btn-warning" href="#" role="button" id="btn_05" onclick="yearSelect(2005)">2005</a>
