@@ -17,7 +17,7 @@ body {
    background-color: rgba(85, 85, 85, 0.7);
 }
 
-    @media (max-width: 500px) and (min-width: 300px){
+    @media (max-width: 600px) and (min-width: 300px){
 
       #btn_container {
         margin-left: 50px;
@@ -45,7 +45,7 @@ body {
       }
     }
 
-    @media (max-width: 2000px) and (min-width: 500px){
+    @media (max-width: 2000px) and (min-width: 600px){
 
       #btn_container {
         margin-left: 250px;
