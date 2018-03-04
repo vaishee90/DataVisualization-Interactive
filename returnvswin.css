@@ -12,6 +12,10 @@ body {
   p {
     color: white;
   }
+  
+  .well {
+   background-color: rgba(15, 15, 15, 0.7);
+}
 
     #chart {
       margin: 0px auto;
@@ -19,6 +23,7 @@ body {
       fill: white;
     }
 
+    @media all and (max-height: 2000px) and (min-height: 700px){
     #bgimg{
       background-image: url(tennis_bg.png);
       background-repeat: no-repeat;
@@ -27,6 +32,7 @@ body {
       background-blend-mode: normal;
       position: relative;
     }
+  }
 
     .circle {
       stroke: black;
