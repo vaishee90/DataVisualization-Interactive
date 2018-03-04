@@ -1,5 +1,5 @@
 var margin = {top: 19.5, right: 15, bottom: 19.5, left: 42},
-    width = 645 - margin.right - margin.left,
+	width = d3.select("#chart_container").node().getBoundingClientRect().width - margin.right - margin.left,
     height = 420 - margin.top - margin.bottom,
     radius = 5;
    
